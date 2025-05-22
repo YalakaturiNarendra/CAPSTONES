@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 2rem;
+            background: linear-gradient(to bottom, #FF4B2B, #FFFFFF); /* Red to White Gradient */
+            color: #f5f3e7;
+        }
+
+        button {
+            background: linear-gradient(to bottom, #e51c23, #FF4B2B); /* Gradient red */
+            border: 2px solid #d32f2f;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            border-radius: 6px;
+            color: #fdfaf5;
+            margin: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            border-bottom: 2px solid #c2185b;
+            padding-bottom: 5px;
+            background: linear-gradient(to right, #e91e63, #d32f2f); /* Red gradient */
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            color: #f5e9d6;
+        }
+
+        div {
+            background: linear-gradient(to top left, #f44336, #FFCDD2); /* Soft red tones */
+            border: 2px solid #d32f2f;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 20px;
+            box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .book-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .book-details h3 {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #f5e9d6;
+        }
+
+        .book-details a {
+            color: #0f0f0e;
+            font-size: 1.1rem;
+            text-decoration: underline;
+        }
+
+        .book-details p {
+            background: #d32f2f;
+            padding: 1rem;
+            border-left: 4px solid #c2185b;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+            color: #f4efe7;
+            font-size: 1rem;
+        }
+
+        /* Change color of text inside textboxes */
+        input[type="text"],
+        textarea {
+            color: #4b4b4b; /* Light gray color for text inside textboxes */
+            background: #fff3f3; /* Light red background color for textboxes */
+        }
+    </style>
+</head>
+<body>
+    <a href="/create"><button>Create a new note</button></a>
+    <a href="/update"><button>Update notes</button></a>
+    <a href="/delete"><button>Delete notes</button></a>
+    
+    <h1>The Notes You Have Written</h1>
+    
+    <div>
+        <% bookslist.forEach((element) => { %>
+            <div class="book-details">
+                <h1><%= element.bookTitle %></h1>
+                <h3>Brief: <%= element.brief %></h3>
+                <a href="<%= element.linkofbook %>" target="_blank">Link to book</a>
+                <p>Notes: <%= element.notes %></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

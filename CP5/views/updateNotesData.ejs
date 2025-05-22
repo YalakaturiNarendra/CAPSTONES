@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #ff0000, #ffffff);
+            margin: 0;
+            padding: 2rem;
+            background-image: 
+                repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255,255,255,0.02) 31px),
+                linear-gradient(to bottom, #ff4c4c 0%, #ffffff 100%);
+            color: #3a3a3a;
+        }
+
+        button, input[type="submit"] {
+            background: linear-gradient(to bottom, #ff4c4c, #ff1a1a);
+            border: 2px dashed #ff9999;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            border-radius: 6px;
+            color: #ffffff;
+            margin: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff6666;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            border-bottom: 2px dashed #ff9999;
+            padding-bottom: 5px;
+            background: linear-gradient(to right, #ff4c4c, #ff1a1a);
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            color: #ffffff;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #ff6666;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ff9999;
+            background: linear-gradient(to bottom right, #ffcccc, #ffffff);
+            border-radius: 5px;
+            font-family: 'Georgia', serif;
+            color: #3a3a3a;
+        }
+
+        form {
+            background: linear-gradient(to bottom right, #ffcccc, #ff6666);
+            border: 2px dashed #ff9999;
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 2rem auto;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        div {
+            background: linear-gradient(to top left, #ff6666, #ffcccc);
+            border: 2px dashed #ff9999;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 20px;
+            box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        p {
+            background: #ffcccc;
+            padding: 1rem;
+            border-left: 4px solid #ff6666;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="/upNote">
+        <input type="hidden" name="oldt" value="<%=dab.bookTitle%>"/>
+        <input type="text" name="booktitle" value="<%=dab.bookTitle%>"/>
+        <textarea name="brief"><%=dab.brief%></textarea>
+        <input type="url" name="linkofbook" value="<%= dab.linkofbook %>"/>
+        <textarea name="notes"><%= dab.notes %></textarea>
+        <input type="submit" value="Update"/>
+    </form>
+</body>
+</html>
