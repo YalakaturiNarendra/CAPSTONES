@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#center_text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+}
+
+.profile-text {
+    font-size: 1.1rem;
+    max-width: 500px;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* Skills Section - Database First */
+.skills-container {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-radius: 20px;
+}
+
+#skill {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a5568;
+    position: relative;
+}
+
+#skill::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Database Skill - Highlighted */
+.skill-box:nth-child(1) {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-left: 4px solid #667eea;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    margin-right: 25px;
+    object-fit: contain;
+}
+
+.skill-text h3 {
+    color: #4a5568;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skill-text p {
+    font-size: 1rem;
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* Contact Button */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    padding: 18px 36px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.contact a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(90deg, #5a6fd6 0%, #6a4299 100%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a:hover {
+    color: #667eea;
+    transform: translateY(-2px);
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(157, 251, 251);
+    text-align: center;
+    padding: 50px;
+}
+h2 {
+    color: teal;
+    font-size: 30px;
+}
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: teal;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.back-btn:hover {
+    background-color: darkcyan;
+}

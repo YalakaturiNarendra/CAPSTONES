@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sai Kumar Tiruvidhi - Frontend Developer Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <title>Yalakaturi Narendra | Java Developer</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="center_text">Yalakaturi Narendra</h1>
+            <p class="subtitle">BTech Undergraduate | Java Developer</p>
+        </header>
+        
+        <section class="profile">
+            <img src="IMAGE.jpg" alt="Profile photo of Sai Kumar Tiruvidhi" width="200" height="200" />
+            <div class="profile-text">
+                <p>
+                    Passionate Java developer with strong foundational knowledge in object-oriented programming, data structures, and algorithms. Experienced in building robust applications using Java SE/EE, Spring Boot, and Hibernate. Skilled in REST API development, database design (SQL), and microservices architecture. Continuously expanding expertise in cloud technologies (AWS/Azure) and system optimization.
+
+
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <hr aria-hidden="true" />
+    
+    <section class="skills">
+        <h2>Skills</h2>
+        
+        <article class="skill-box">
+            <img src="frontend.jpg" alt="Frontend development icon" width="100" height="100" />
+            <div class="skill-text">
+                <h3>Frontend Development</h3>
+                <p>
+                    Build responsive, accessible web interfaces using modern HTML5, CSS3, and JavaScript (ES6+).
+                </p>
+            </div>
+        </article>
+
+        <article class="skill-box">
+            <img src="java.png" alt="Python programming icon" width="100" height="100" />
+            <div class="skill-text">
+                <h3>Java Programming</h3>
+                <p>
+                    Built an Inventory Management System using Java Swing, with MySQL integration for data persistence. 
+                    Strong understanding of Java fundamentals and problem-solving skills.
+                </p>
+            </div>
+        </article>
+
+        <article class="skill-box">
+            <img src="DB.png" alt="Database management icon" width="100" height="100" />
+            <div class="skill-text">
+                <h3>Database Management</h3>
+                <p>
+                    Skilled in database architecture and query optimization, with experience designing normalized schemas and writing performant SQL for complex data operations.
+                </p>
+            </div>
+        </article>
+    </section>
+    
+    <hr aria-hidden="true" />
+    
+    <section class="contact">
+        <h2 class="visually-hidden">Contact</h2>
+        <a href="contact.html" class="contact-button">Contact Me</a>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Yalakaturi Narendra. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/yalakaturi-narendra-a22597338/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Automatically update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<div class="banner container py-16" role="banner">
+  <div class="row h-100">
+    <div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-center">
+      <h1 class="display-3 fw-bold text-[#702c4c]">Welcome to Blog</h1>
+      <b><h5 class="display-4 text-[#702c4c]">Ready to Explore?</h5></b>
+      <b><h5 class="display-4 text-[#702c4c]">Discover a New Way to Learn and Grow</h5></b>
+      <p class="fs-5 text-[#4a3c3d] opacity-80">A Place that makes you a <br />Better Person.</p>
+    </div>
+    <div class="col-12 col-md-6 h-100 d-flex justify-content-center align-items-center">
+      <div class="bg-white border border-[#dab3c3] rounded-xl shadow-lg">
+        <img src="/Images/banner.png" alt="Banner Image" class="w-100 h-100 object-cover" style="min-height: 200px;"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="explore" class="container py-12">
+  <h3 class="text-center text-2xl font-semibold text-[#702c4c] border-b-2 border-[#dab3c3] pb-4 mb-6">
+    Explore
+  </h3>
+  <%- include("partials/explore.ejs") %>
+</main>
+
+<%- include("partials/footer.ejs") %>

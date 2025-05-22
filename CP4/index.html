@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-bg">
+        <div class="sun"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+      <div class="rain"></div>
+<div class="snow"></div>
+<div class="lightning"></div>
+    
+  <div class="weather-container">
+    <h1><i class="fas fa-cloud-sun"></i> Weather Forecast</h1>
+    
+    <div class="search-container">
+      <input type="text" id="city-name" placeholder="Enter city name..." />
+      <button id="search-btn">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </div>
+
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <div id="weather-info">
+      <h2 class="city-name"></h2>
+      <p class="weather-desc"></p>
+      
+      <div class="weather-main">
+        <img class="weather-icon" src="" alt="Weather icon">
+        <span class="temp"></span>
+      </div>
+      
+      <div class="weather-details">
+        <div class="detail-card">
+          <p><i class="fas fa-temperature-high"></i> Feels Like</p>
+          <p class="feels-like"></p>
+        </div>
+        <div class="detail-card">
+          <p><i class="fas fa-tint"></i> Humidity</p>
+          <p class="humidity"></p>
+        </div>
+        <div class="detail-card">
+          <p><i class="fas fa-wind"></i> Wind Speed</p>
+          <p class="wind-speed"></p>
+        </div>
+        <div class="detail-card">
+          <p><i class="fas fa-compress-alt"></i> Pressure</p>
+          <p class="pressure"></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="error-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
